@@ -1,0 +1,508 @@
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .coll-1 {
+    width: 8.3333333333%;
+  }
+
+  .coll-2 {
+    width: 16.6666666667%;
+  }
+
+  .coll-3 {
+    width: 25%;
+  }
+
+  .coll-4 {
+    width: 33.3333333333%;
+  }
+
+  .coll-5 {
+    width: 41.6666666667%;
+  }
+
+  .coll-6 {
+    width: 50%;
+  }
+
+  .coll-7 {
+    width: 58.3333333333%;
+  }
+
+  .coll-8 {
+    width: 66.6666666667%;
+  }
+
+  .coll-9 {
+    width: 75%;
+  }
+
+  .coll-10 {
+    width: 83.3333333333%;
+  }
+
+  .coll-11 {
+    width: 91.6666666667%;
+  }
+
+  .coll-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    width: 95%;
+    max-width: 1800px;
+  }
+
+  .coll-md-1 {
+    width: 8.3333333333%;
+  }
+
+  .coll-md-2 {
+    width: 16.6666666667%;
+  }
+
+  .coll-md-3 {
+    width: 25%;
+  }
+
+  .coll-md-4 {
+    width: 33.3333333333%;
+  }
+
+  .coll-md-5 {
+    width: 41.6666666667%;
+  }
+
+  .coll-md-6 {
+    width: 50%;
+  }
+
+  .coll-md-7 {
+    width: 58.3333333333%;
+  }
+
+  .coll-md-8 {
+    width: 66.6666666667%;
+  }
+
+  .coll-md-9 {
+    width: 75%;
+  }
+
+  .coll-md-10 {
+    width: 83.3333333333%;
+  }
+
+  .coll-md-11 {
+    width: 91.6666666667%;
+  }
+
+  .coll-md-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .wrapper {
+    width: 95%;
+    max-width: 1800px;
+  }
+
+  .coll-lg-1 {
+    width: 8.3333333333%;
+  }
+
+  .coll-lg-2 {
+    width: 16.6666666667%;
+  }
+
+  .coll-lg-3 {
+    width: 25%;
+  }
+
+  .coll-lg-4 {
+    width: 33.3333333333%;
+  }
+
+  .coll-lg-5 {
+    width: 41.6666666667%;
+  }
+
+  .coll-lg-6 {
+    width: 50%;
+  }
+
+  .coll-lg-7 {
+    width: 58.3333333333%;
+  }
+
+  .coll-lg-8 {
+    width: 66.6666666667%;
+  }
+
+  .coll-lg-9 {
+    width: 75%;
+  }
+
+  .coll-lg-10 {
+    width: 83.3333333333%;
+  }
+
+  .coll-lg-11 {
+    width: 91.6666666667%;
+  }
+
+  .coll-lg-12 {
+    width: 100%;
+  }
+}
+/**
+   * Set up a decent box model on the root element
+   */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header,
+nav,
+section,
+footer {
+  width: 100%;
+}
+
+h1 {
+  font-family: "BenchNine", sans-serif;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+li,
+ul {
+  list-style: none;
+  display: inline;
+}
+
+p {
+  font-family: "Assistant", sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+}
+
+footer {
+  background-color: #e24e42;
+  min-height: 3vh;
+}
+footer a {
+  color: white;
+}
+
+/**
+   * Basic typography style for copy text
+   */
+.wrapper {
+  width: 100%;
+}
+
+.wrapper,
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/**
+   * Clear inner floats
+   */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/**
+   * Main content containers
+   * 1. Make the container full-width with a maximum width
+   * 2. Center it in the viewport
+   * 3. Leave some space on the edges, especially valuable on small screens
+   */
+.container {
+  max-width: 1800px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */
+}
+
+/**
+   * Hide text while making it readable for screen readers
+   * 1. Needed in WebKit-based browsers because of an implementation bug;
+   *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+   */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/**
+   * Hide element while making it readable for screen readers
+   */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.hero-image {
+  background: url(img/pexels-anna-tarazevich-5211559.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  height: 40vh;
+  max-height: 500px;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .hero-image h1,
+  .hero-image h5 {
+    display: none;
+  }
+}
+
+#hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#hero h1 {
+  font-family: "BenchNine", sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 7em;
+  text-shadow: 2px 2px #e24e42;
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+}
+#hero h5 {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 29vh;
+  left: 16vw;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
+}
+.logo-img:before {
+  display: block;
+  content: ";)";
+  width: 100%;
+  padding-top: 100%;
+}
+.logo-img > .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.navbar-toggler:hover {
+  background-color: #e24e42;
+}
+
+.navbar-collapse li {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+}
+.navbar-collapse li:hover {
+  background-color: rgba(226, 78, 66, 0.5);
+}
+
+.main-nav {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.main-nav ul {
+  padding-left: 0px;
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+}
+.main-nav ul .nav-link {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+.main-nav ul li {
+  padding: 0 2vw;
+}
+
+.secondary-nav {
+  justify-content: center;
+  font-size: 1.5em;
+}
+.secondary-nav .social i {
+  font-size: 1.65em;
+}
+@media only screen and (min-width: 768px) {
+  .secondary-nav {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .secondary-nav {
+    font-size: 1.35em;
+  }
+}
+
+.accent-color {
+  background-color: #e24e42;
+}
+
+.gallery-image {
+  border: 1px;
+  padding: 1rem;
+}
+.gallery-image h4 {
+  font-size: 1.2em;
+  text-align: center;
+}
+.gallery-image p {
+  padding-left: 0.3rem;
+  font-size: 0.7em;
+  margin-bottom: 0px;
+}
+
+.main-section h4,
+h3 {
+  font-family: "BenchNine", sans-serif;
+  font-weight: 700;
+  font-size: 1.75em;
+}
+
+.main-object {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-bottom: 1vh;
+}
+
+.main-blog {
+  padding: 1em;
+}
+.main-blog .main-blog-image {
+  padding: 1em;
+}
+.main-blog .main-blog-text {
+  padding: 1em;
+}
+.main-blog .main-blog-text h1 {
+  text-align: left;
+}
+
+.sidebar {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.widget {
+  padding: 1rem;
+}
+
+.widget-text {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-bottom: 1vh;
+}
+
+.widget-img {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-bottom: 1vh;
+}
+
+.col-text {
+  padding: 1rem;
+  padding-top: 0px;
+}
+@media only screen and (max-width: 767px) {
+  .col-text {
+    max-height: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .col-text {
+    max-height: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .col-text {
+    max-height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.footer-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign-up {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}
+
+.sign-up-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign-up-md-up {
+  padding-top: 2em;
+  padding-left: 2em;
+  border-left: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+/*# sourceMappingURL=styles.css.map */
